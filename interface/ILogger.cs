@@ -5,5 +5,6 @@ namespace helloworld
     public interface ILogger
     {
         void WriteLogInfo(string message);
+        void WriteLogError(string message);
     }
 }

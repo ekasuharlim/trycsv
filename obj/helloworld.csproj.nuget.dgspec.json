@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/kiasemoto/Documents/netcore/helloworld/helloworld.csproj": {}
+    "/home/kiasemoto/Documents/netcore/trycsv/helloworld.csproj": {}
   },
   "projects": {
-    "/home/kiasemoto/Documents/netcore/helloworld/helloworld.csproj": {
+    "/home/kiasemoto/Documents/netcore/trycsv/helloworld.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/kiasemoto/Documents/netcore/helloworld/helloworld.csproj",
+        "projectUniqueName": "/home/kiasemoto/Documents/netcore/trycsv/helloworld.csproj",
         "projectName": "helloworld",
-        "projectPath": "/home/kiasemoto/Documents/netcore/helloworld/helloworld.csproj",
+        "projectPath": "/home/kiasemoto/Documents/netcore/trycsv/helloworld.csproj",
         "packagesPath": "/home/kiasemoto/.nuget/packages/",
-        "outputPath": "/home/kiasemoto/Documents/netcore/helloworld/obj/",
+        "outputPath": "/home/kiasemoto/Documents/netcore/trycsv/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/share/dotnet/sdk/NuGetFallbackFolder"
@@ -38,6 +38,12 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.18, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

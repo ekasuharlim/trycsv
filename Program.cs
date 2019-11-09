@@ -8,10 +8,23 @@ namespace helloworld
         {
 
             //Read csv file
-            var salesDataReader = new SalesDataReader();
+            var salesDataReader = new SalesDataReader(@"/home/kiasemoto/Documents/netcore/trycsv/data/sales.csv");
+            var salesDataWriter = new SalesDataWriter("Server=localhost;Database=zuhlke;Uid=newuser;Pwd=test;");
             var logger = new Logger();
-            salesDataReader.ReadData(@"/home/kiasemoto/Documents/netcore/helloworld/data/sales.csv",logger);
-            //Console.WriteLine(greeting.sayHello());
+
+            while (!salesDataReader.EndOfData)
+            {
+                try
+                {
+                    var salesTransaction = salesDataReader.ReadData();
+                    salesDataWriter.WriteData(salesTransaction);
+                }
+                catch (SalesTransactionWriteException writeException)
+                {
+                    logger.WriteLogError(writeException.Message);                    
+                }
+
+            }
         }
     }
 }
