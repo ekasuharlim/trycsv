@@ -4,7 +4,7 @@ using System.Globalization;
 
 namespace helloworld
 {
-    public class SalesDataReader : IDisposable
+    public class SalesDataReader : ISalesDataReader, IDisposable
     {
         private TextFieldParser csvParser;
 
@@ -13,13 +13,9 @@ namespace helloworld
             OpenConnection(dataFilePath);
         }
 
-        public bool EndOfData
+        public bool IsEndOfData()
         {
-            get
-            {
                 return csvParser.EndOfData;
-
-            }
         }
 
         public SalesTransaction ReadData()

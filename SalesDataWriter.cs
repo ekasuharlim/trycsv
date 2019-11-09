@@ -4,7 +4,7 @@ using MySql.Data.MySqlClient;
 namespace helloworld
 {
 
-    public class SalesDataWriter : IDisposable
+    public class SalesDataWriter :ISalesDataWriter, IDisposable
     {
         private MySqlConnection sqlConnection;
         public SalesDataWriter(string connectionString)
