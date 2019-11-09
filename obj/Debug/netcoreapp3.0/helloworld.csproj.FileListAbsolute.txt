@@ -1,0 +1,11 @@
+/home/kiasemoto/Documents/netcore/helloworld/bin/Debug/netcoreapp3.0/helloworld
+/home/kiasemoto/Documents/netcore/helloworld/bin/Debug/netcoreapp3.0/helloworld.deps.json
+/home/kiasemoto/Documents/netcore/helloworld/bin/Debug/netcoreapp3.0/helloworld.runtimeconfig.json
+/home/kiasemoto/Documents/netcore/helloworld/bin/Debug/netcoreapp3.0/helloworld.runtimeconfig.dev.json
+/home/kiasemoto/Documents/netcore/helloworld/bin/Debug/netcoreapp3.0/helloworld.dll
+/home/kiasemoto/Documents/netcore/helloworld/bin/Debug/netcoreapp3.0/helloworld.pdb
+/home/kiasemoto/Documents/netcore/helloworld/obj/Debug/netcoreapp3.0/helloworld.csprojAssemblyReference.cache
+/home/kiasemoto/Documents/netcore/helloworld/obj/Debug/netcoreapp3.0/helloworld.AssemblyInfoInputs.cache
+/home/kiasemoto/Documents/netcore/helloworld/obj/Debug/netcoreapp3.0/helloworld.AssemblyInfo.cs
+/home/kiasemoto/Documents/netcore/helloworld/obj/Debug/netcoreapp3.0/helloworld.dll
+/home/kiasemoto/Documents/netcore/helloworld/obj/Debug/netcoreapp3.0/helloworld.pdb
