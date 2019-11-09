@@ -1,6 +1,6 @@
 using System;
 
-namespace helloworld
+namespace SalesImport
 {
     public interface ILogger
     {

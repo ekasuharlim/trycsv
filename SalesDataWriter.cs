@@ -1,7 +1,7 @@
 using System;
 using MySql.Data.MySqlClient;
 
-namespace helloworld
+namespace SalesImport
 {
 
     public class SalesDataWriter :ISalesDataWriter, IDisposable

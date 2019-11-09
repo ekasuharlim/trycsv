@@ -1,4 +1,4 @@
-namespace helloworld
+namespace SalesImport
 {
     public interface ISalesDataReader
     {

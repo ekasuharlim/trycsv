@@ -2,7 +2,7 @@ using System;
 using Microsoft.VisualBasic.FileIO;
 using System.Globalization;
 
-namespace helloworld
+namespace SalesImport
 {
     public class SalesDataReader : ISalesDataReader, IDisposable
     {

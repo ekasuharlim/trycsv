@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "/home/kiasemoto/Documents/netcore/trycsv/helloworld.csproj": {}
+    "/home/kiasemoto/Documents/netcore/trycsv/SalesImport.csproj": {}
   },
   "projects": {
-    "/home/kiasemoto/Documents/netcore/trycsv/helloworld.csproj": {
+    "/home/kiasemoto/Documents/netcore/trycsv/SalesImport.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/kiasemoto/Documents/netcore/trycsv/helloworld.csproj",
-        "projectName": "helloworld",
-        "projectPath": "/home/kiasemoto/Documents/netcore/trycsv/helloworld.csproj",
+        "projectUniqueName": "/home/kiasemoto/Documents/netcore/trycsv/SalesImport.csproj",
+        "projectName": "SalesImport",
+        "projectPath": "/home/kiasemoto/Documents/netcore/trycsv/SalesImport.csproj",
         "packagesPath": "/home/kiasemoto/.nuget/packages/",
         "outputPath": "/home/kiasemoto/Documents/netcore/trycsv/obj/",
         "projectStyle": "PackageReference",
@@ -39,6 +39,18 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "(, )"
+            },
             "MySql.Data": {
               "target": "Package",
               "version": "[8.0.18, )"

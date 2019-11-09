@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace helloworld
+namespace SalesImport
 {
     class Program
     {
@@ -9,6 +9,7 @@ namespace helloworld
 
             //Read csv file
             var salesDataReader = new SalesDataReader(@"/home/kiasemoto/Documents/netcore/trycsv/data/sales.csv");
+            //password should be encrypted
             var salesDataWriter = new SalesDataWriter("Server=localhost;Database=zuhlke;Uid=newuser;Pwd=test;");
             var logger = new Logger();
             try

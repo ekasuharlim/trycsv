@@ -1,5 +1,5 @@
 using System;
-namespace helloworld
+namespace SalesImport
 {
     public class SalesTransactionWriteException : Exception
     {
