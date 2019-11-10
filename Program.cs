@@ -1,4 +1,8 @@
 ﻿using System;
+using System.IO;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration.FileExtensions;
+using Microsoft.Extensions.Configuration.Json;
 
 namespace SalesImport
 {
@@ -6,25 +10,28 @@ namespace SalesImport
     {
         static void Main(string[] args)
         {
+            IConfiguration config = new ConfigurationBuilder()
+            .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+            .Build();
 
-            //Read csv file
-            var salesDataReader = new SalesDataReader(@"/home/kiasemoto/Documents/netcore/trycsv/data/sales.csv");
-            //password should be encrypted
-            var salesDataWriter = new SalesDataWriter("Server=localhost;Database=zuhlke;Uid=newuser;Pwd=test;");
+            SalesDataReader salesDataReader = null;
+            SalesDataWriter salesDataWriter = null;
             var logger = new Logger();
             try
             {
-                ImportData(salesDataReader,salesDataWriter,logger);
-
+                salesDataReader = new SalesDataReader(config["sourceFilePath"]);
+                //production : password should be encrypted
+                salesDataWriter = new SalesDataWriter(config["connectionString"]);
+                ImportData(salesDataReader, salesDataWriter, logger);
             }
             catch (Exception ex)
             {
                 logger.WriteLogError(ex.Message);
             }
-            finally 
+            finally
             {
-                salesDataReader.Dispose();
-                salesDataWriter.Dispose(); 
+                if(salesDataReader != null) salesDataReader.Dispose();
+                if(salesDataWriter != null) salesDataWriter.Dispose();
 
             }
 

@@ -5835,7 +5835,7 @@
     ".NETCoreApp,Version=v3.0": [
       "Microsoft.Extensions.Configuration >= 3.0.0",
       "Microsoft.Extensions.Configuration.FileExtensions >= 3.0.0",
-      "Microsoft.Extensions.Configuration.Json",
+      "Microsoft.Extensions.Configuration.Json >= 3.0.0",
       "MySql.Data >= 8.0.18"
     ]
   },
@@ -5888,7 +5888,7 @@
           },
           "Microsoft.Extensions.Configuration.Json": {
             "target": "Package",
-            "version": "(, )"
+            "version": "[3.0.0, )"
           },
           "MySql.Data": {
             "target": "Package",
